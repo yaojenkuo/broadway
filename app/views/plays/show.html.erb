@@ -28,8 +28,8 @@
 <div class="links btn-group">
     <% if user_signed_in? %>
         <% if @play.user_id == current_user.id %>
-            <%= link_to "Edit", edit_play_path(@play), class: "btn btn-custom" %>
-            <%= link_to "Delete", play_path(@play), method: :delete, class: "btn btn-custom", data: {confirm: "Are you sure?" }%>
+            <%= link_to "Edit", edit_play_path(@play), class: "btn btn-info" %>
+            <%= link_to "Delete", play_path(@play), method: :delete, class: "btn btn-danger", data: {confirm: "Are you sure?" }%>
         <% end %>
     <% end %>
 </div>
